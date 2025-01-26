@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CharityRun : Profile</title>
+      <link rel="stylesheet" href="profile.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" rel="stylesheet">
+</head>
+<body>
+      <div class="container">
+            <div class="profile-header">
+                <div class="profile-title">
+                    <h1>Profile Dashboard</h1>
+                    <div class="achievements">
+                        <span class="achievement-badge">
+                            <i class="ri-verified-badge-fill"></i>
+                            Verified Runner
+                        </span>
+                    </div>
+                </div>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="ri-moon-line" style="color: black;"></i>
+                </button>
+            </div>
+      
+            <div class="profile-grid">
+                <div class="sidebar">
+                    <div class="profile-card">
+                        <img src="/api/placeholder/150/150" alt="Profile Photo" class="profile-photo">
+                        <div class="profile-info">
+                            <h2>John Runner</h2>
+                            <div class="profile-role">Elite Runner</div>
+                            <button class="btn btn-outline">
+                                <i class="ri-edit-line"></i>
+                                Edit Profile
+                            </button>
+                        </div>
+      
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">42</div>
+                                <div class="stat-label">Total Runs</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">156</div>
+                                <div class="stat-label">km Run</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">$520</div>
+                                <div class="stat-label">Raised</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">12</div>
+                                <div class="stat-label">Events</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      
+                <div class="main-content">
+                    <div class="card">
+                        
+                        <div class="card-header">
+                            <h2><i class="ri-user-line card-icon"></i> Personal Information</h2>
+                            <a href="../deshboard/deshboard.html"><button class="btn btn-outline">Save Changes</button></a>
+                        </div>
+      
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" value="John Runner">
+                        </div>
+      
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" value="john@example.com">
+                        </div>
+      
+                        <div class="form-group">
+                            <label class="form-label">Event Preference</label>
+                            <select class="form-control">
+                                <option>5K Run/Walk</option>
+                                <option>10K Run</option>
+                                <option>Half Marathon</option>
+                                <option>Full Marathon</option>
+                            </select>
+                        </div>
+                    </div>
+      
+                    <div class="card">
+                        <div class="card-header">
+                            <h2><i class="ri-flag-line card-icon"></i> Goals & Progress</h2>
+                        </div>
+      
+                        <div class="form-group">
+                            <label class="form-label">Distance Goal (km)</label>
+                            <input type="number" class="form-control" value="200">
+                            <div class="goal-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 78%"></div>
+                                </div>
+                                <span class="form-label">156km completed (78%)</span>
+                            </div>
+                        </div>
+      
+                        <div class="form-group">
+                            <label class="form-label">Fundraising Goal ($)</label>
+                            <input type="number" class="form-control" value="1000">
+                            <div class="goal-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 52%"></div>
+                                </div>
+                                <span class="form-label">$520 raised (52%)</span>
+                            </div>
+                        </div>
+                    </div>
+      
+                    <div class="card">
+                        <div class="card-header">
+                            <h2><i class="ri-history-line card-icon"></i> Recent Activities</h2>
+                        </div>
+      
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="ri-run-line"></i>
+                                </div>
+                                <div class="activity-info">
+                                    <div class="activity-date">May 15, 2024</div>
+                                    <div class="activity-details">
+                                        <span class="activity-stat">
+                                            <i class="ri-route-line"></i>
+                                            5.2 km
+                                        </span>
+                                        <span class="activity-stat">
+      
+                                        <i class="ri-timer-line"></i>
+                                            32:15
+                                        </span>
+                                        <span class="activity-stat">
+                                            <i class="ri-heart-pulse-line"></i>
+                                            154 bpm
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+      
+      
+                                    <div class="activity-item">
+                                    <div class="activity-icon">
+                                          <i class="ri-run-line"></i>
+                                    </div>
+                                    <div class="activity-info">
+                                          <div class="activity-date">May 12, 2024</div>
+                                          <div class="activity-details">
+                                                <span class="activity-stat">
+                                                <i class="ri-route-line"></i>
+                                                3.8 km
+                                                </span>
+                                                <span class="activity-stat">
+                                                <i class="ri-timer-line"></i>
+                                                25:40
+                                                </span>
+                                                <span class="activity-stat">
+                                                <i class="ri-heart-pulse-line"></i>
+                                                148 bpm
+                                                </span>
+                                          </div>
+                                    </div>
+                                    </div>
+      
+                                    <div class="activity-item">
+                                    <div class="activity-icon">
+                                          <i class="ri-run-line"></i>
+                                    </div>
+                                    <div class="activity-info">
+                                          <div class="activity-date">May 10, 2024</div>
+                                          <div class="activity-details">
+                                                <span class="activity-stat">
+                                                <i class="ri-route-line"></i>
+                                                4.5 km
+                                                </span>
+                                                <span class="activity-stat">
+                                                <i class="ri-timer-line"></i>
+                                                28:15
+                                                </span>
+                                                <span class="activity-stat">
+                                                <i class="ri-heart-pulse-line"></i>
+                                                151 bpm
+                                                </span>
+                                          </div>
+                                    </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <script>
+        
+      </script>
+      <script src="profile.js">
+                
+      </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CharityRun : Leadboard</title>
+      <link rel="stylesheet" href="leadboard.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="ri-run-line"></i>
+            CharityRun
+        </div>
+        <div class="nav-links">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../event/event.html" class="nav-link">Events</a>
+            <a href="../deshboard/deshboard.html" class="nav-link">Deshbord</a>
+            <a href="../profile/profile.html" class="nav-link">Profile</a>
+            <button class="theme-toggle">
+                <i class="ri-moon-line"></i>
+            </button>
+        </div>
+        <button class="mobile-menu-btn">
+            <i class="ri-menu-line"></i>
+        </button>
+    </nav>
+      <div class="dashboard">
+            <header class="header">
+                <h1>Impact Leaderboard</h1>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">$126,500</span>
+                        <span class="stat-label">Total Raised</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">1,234</span>
+                        <span class="stat-label">Participants</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">42</span>
+                        <span class="stat-label">Active Events</span>
+                    </div>
+                </div>
+            </header>
+    
+            <section class="top-winners" id="topWinners">
+                <!-- Top winners populated by JavaScript -->
+            </section>
+    
+            <div class="filters">
+                <div class="search-container">
+                    <i class="ri-search-line search-icon"></i>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search participants...">
+                </div>
+                <select id="sortSelect" class="filter-select">
+                    <option value="totalImpact">Sort by Impact</option>
+                    <option value="events">Sort by Events</option>
+                    <option value="charityRaised">Sort by Amount Raised</option>
+                </select>
+            </div>
+    
+            <div class="leaderboard-card">
+                <table class="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Participant</th>
+                            <th>Events</th>
+                            <th>Amount Raised</th>
+                            <th>Impact Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboardList">
+                        <!-- Leaderboard entries populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="leadboard.js"></script>
+</body>
+</html>

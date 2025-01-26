@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CharityRun : Deshboard</title>
+      <link rel="stylesheet" href="deshboard.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">CharityRun</div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../index.html">Features</a>
+            <a href="../index.html">Impact</a>
+            <a href="./event/event.html">Events</a>
+            <button class="theme-toggle">
+                <i class="ri-moon-line"></i>
+            </button>
+        </div>
+    </nav>
+      <div class="container">
+            <div class="header">
+                <div class="welcome-text">
+                    <h1>Fitness Dashboard</h1>
+                </div>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="ri-moon-line"></i>
+                </button>
+            </div>
+    
+            <div class="dashboard-grid">
+                <div class="welcome-card">
+                    <div class="welcome-text">
+                        <h1>Welcome back, Emily! 👋</h1>
+                        <p>You're making great progress towards your goals</p>
+                    </div>
+                    <img src="/api/placeholder/80/80" alt="User Avatar" class="user-avatar">
+                </div>
+    
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: var(--gradient-1)">
+                            <i class="ri-run-line"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Total Distance</h3>
+                            <div class="stat-value">156.2 km</div>
+                        </div>
+                    </div>
+    
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: var(--gradient-2)">
+                            <i class="ri-heart-line"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Funds Raised</h3>
+                            <div class="stat-value">$1,250</div>
+                        </div>
+                    </div>
+    
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: var(--gradient-1)">
+                            <i class="ri-fire-line"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Active Streak</h3>
+                            <div class="stat-value">12 Days</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="progress-section">
+                    <div class="card progress-card">
+                        <div class="progress-header">
+                            <div class="progress-title">Distance Goal Progress</div>
+                            <div id="distancePercentage">78%</div>
+                        </div>
+                        <div class="progress-stats">
+                            <span>Current: 156.2 km</span>
+                            <span>Goal: 200 km</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill distance" style="width: 78%"></div>
+                        </div>
+                    </div>
+    
+                    <div class="card progress-card">
+                        <div class="progress-header">
+                            <div class="progress-title">Fundraising Progress</div>
+                            <div id="fundPercentage">62%</div>
+                        </div>
+                        <div class="progress-stats">
+                            <span>Raised: $1,250</span>
+                            <span>Goal: $2,000</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill donation" style="width: 62%"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="achievements-section">
+                    <div class="card">
+                        <h3 class="progress-title" style="margin-bottom: 1rem">Recent Achievements</h3>
+                        <div class="achievement-list">
+                            <div class="achievement-item">
+                                <div class="achievement-icon" style="background: var(--gradient-1)">
+                                    <i class="ri-medal-line"></i>
+                                </div>
+                                <div class="achievement-info">
+                                    <h4>First 50km</h4>
+                                    <p>Completed your first 50 kilometers</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon" style="background: var(--gradient-2)">
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div class="achievement-info">
+                                    <h4>Top Fundraiser</h4>
+                                    <p>Raised over $1,000 for charity</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon" style="background: var(--gradient-1)">
+                                    <i class="ri-fire-line"></i>
+                                </div>
+                                <div class="achievement-info">
+                                    <h4>10-Day Streak</h4>
+                                    <p>Maintained activity for 10 days</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="quick-actions">
+                    <div class="card action-card" onclick="showModal('donate')">
+                        <div class="action-icon">
+                            <i class="ri-heart-line"></i>
+                        </div>
+                        <div class="action-info">
+                            <h3>Make a Donation</h3>
+                            <p>Support the cause</p>
+                        </div>
+                    </div>
+    
+                    <div class="card action-card" onclick="showModal('activity')">
+                        <div class="action-icon">
+                            <i class="ri-run-line"></i>
+                        </div>
+                        <div class="action-info">
+                            <h3>Log Activity</h3>
+    
+                            <p>Record your progress</p>
+                        </div>
+                    </div>
+    
+                    <div class="card action-card" onclick="window.location.href='/leaderboard'">
+                        <div class="action-icon">
+                            <i class="ri-trophy-line"></i>
+                        </div>
+                        <div class="action-info">
+                            <h3>Leaderboard</h3>
+                            <p>Check rankings</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="activity-feed card">
+                    <h3 class="progress-title" style="margin-bottom: 1rem">Recent Activity</h3>
+                    <div id="activityFeed"></div>
+                </div>
+            </div>
+        </div>
+        <script src="deshboard.js"></script>
+</body>
+</html>

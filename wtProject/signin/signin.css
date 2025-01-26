@@ -1,0 +1,233 @@
+:root {
+      --primary-blue: #007BFF;
+      --primary-hover: #0056b3;
+      --background-light: #F5F7FA;
+      --card-light: #FFFFFF;
+      --text-dark: #2C3E50;
+      --text-light: #6C757D;
+      --border-color: #E1E8EF;
+      
+      /* Dark Mode Colors */
+      --background-dark: #121212;
+      --card-dark: #1E1E1E;
+      --text-dark-primary: #E0E0E0;
+      --text-dark-secondary: #A0A0A0;
+      --border-dark: #2D2D2D;
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+  }
+
+  body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: var(--background-light);
+      color: var(--text-dark);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+  }
+
+  body.dark-mode {
+      background-color: var(--background-dark);
+      color: var(--text-dark-primary);
+  }
+
+  .signin-container {
+      background-color: var(--card-light);
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      width: 100%;
+      max-width: 440px;
+      padding: 40px;
+      position: relative;
+  }
+
+  body.dark-mode .signin-container {
+      background-color: var(--card-dark);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  }
+
+  .theme-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      color: var(--text-light);
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  body.dark-mode .theme-toggle {
+      color: var(--text-dark-primary);
+  }
+
+  .signin-header {
+      text-align: center;
+      margin-bottom: 40px;
+  }
+
+  .signin-logo {
+      font-size: 2rem;
+      color: var(--primary-blue);
+      margin-bottom: 16px;
+  }
+
+  .signin-header h1 {
+      font-size: 1.75rem;
+      margin-bottom: 8px;
+      color: inherit;
+  }
+
+  .signin-header p {
+      color: var(--text-light);
+  }
+
+  .form-group {
+      margin-bottom: 24px;
+      position: relative;
+  }
+
+  .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+  }
+
+  .input-with-icon {
+      position: relative;
+  }
+
+  .input-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-light);
+  }
+
+  .form-control {
+      width: 100%;
+      padding: 12px 16px 12px 46px;
+      border: 2px solid var(--border-color);
+      border-radius: 12px;
+      font-size: 1rem;
+      background: transparent;
+      color: inherit;
+  }
+
+  body.dark-mode .form-control {
+      border-color: var(--border-dark);
+  }
+
+  .form-control:focus {
+      outline: none;
+      border-color: var(--primary-blue);
+      box-shadow: 0 0 0 4px rgba(0,123,255,0.1);
+  }
+
+  .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+  }
+
+  .remember-me {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+  }
+
+  .custom-checkbox {
+      width: 18px;
+      height: 18px;
+      border: 2px solid var(--border-color);
+      border-radius: 4px;
+      cursor: pointer;
+  }
+
+  .custom-checkbox:checked {
+      background-color: var(--primary-blue);
+      border-color: var(--primary-blue);
+  }
+
+  .forgot-password {
+      color: var(--primary-blue);
+      text-decoration: none;
+      font-weight: 500;
+  }
+
+  .signin-btn {
+      width: 100%;
+      padding: 14px;
+      background-color: var(--primary-blue);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      margin-bottom: 24px;
+  }
+
+  .signin-btn  :hover {
+      background-color: var(--primary-hover);
+  }
+
+  .social-signin {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+  }
+
+  .social-btn {
+      flex: 1;
+      padding: 12px;
+      border: 2px solid var(--border-color);
+      border-radius: 12px;
+      background: transparent;
+      color: inherit;
+      font-size: 1.25rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .social-btn:hover {
+      background-color: rgba(0,0,0,0.05);
+  }
+
+  body.dark-mode .social-btn:hover {
+      background-color: rgba(255,255,255,0.05);
+  }
+
+  .signup-link {
+      text-align: center;
+      color: var(--text-light);
+  }
+
+  .signup-link a {
+      color: var(--primary-blue);
+      text-decoration: none;
+      font-weight: 500;
+  }
+
+  @media (max-width: 480px) {
+      .signin-container {
+          padding: 30px 20px;
+      }
+  }

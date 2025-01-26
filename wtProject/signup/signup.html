@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CharityRun : SignUp</title>
+      <link rel="stylesheet" href="signup.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" rel="stylesheet">
+</head>
+<body>
+      <div class="container">
+            <div class="header">
+                <h1>Join the Movement</h1>
+                <p>Register for the Digital Charity Run/Walk</p>
+            </div>
+    
+            <form id="signup-form" class="form-grid">
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <div class="input-wrapper">
+                        <i class="ri-user-line input-icon"></i>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="error-message">Please enter your full name</div>
+                </div>
+    
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="ri-mail-line input-icon"></i>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="error-message">Please enter a valid email address</div>
+                </div>
+    
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <div class="input-wrapper">
+                        <i class="ri-lock-line input-icon"></i>
+                        <input type="password" class="form-control" required>
+                    </div>
+                    <div class="password-strength">
+                        <div class="password-strength-bar"></div>
+                    </div>
+                    <div class="error-message">Password must be at least 8 characters</div>
+                </div>
+    
+                <div class="form-group">
+                    <label class="form-label">Confirm Password</label>
+                    <div class="input-wrapper">
+                        <i class="ri-lock-line input-icon"></i>
+                        <input type="password" class="form-control" required>
+                    </div>
+                    <div class="error-message">Passwords do not match</div>
+                </div>
+    
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Age</label>
+                        <div class="input-wrapper">
+                            <i class="ri-calendar-line input-icon"></i>
+                            <input type="number" class="form-control" min="18" required>
+                        </div>
+                        <div class="error-message">Must be 18 or older</div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label class="form-label">Gender</label>
+                        <div class="input-wrapper">
+                            <i class="ri-user-line input-icon"></i>
+                            <select class="form-control" required>
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label class="form-label">Location</label>
+                    <div class="input-wrapper">
+                        <i class="ri-map-pin-line input-icon"></i>
+                        <input type="text" class="form-control" required>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label class="form-label">Event Preference</label>
+                    <div class="input-wrapper">
+                        <i class="ri-run-line input-icon"></i>
+                        <select class="form-control" required>
+                            <option value="">Select</option>
+                            <option value="running">Running</option>
+                            <option value="walking">Walking</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms" class="checkbox-label">
+                        I agree to the <a href="#">Terms & Conditions</a> and acknowledge that I have read the <a href="#">Event Guidelines</a>
+                    </label>
+                </div>
+    
+                <button type="submit" class="submit-btn" onclick="validateForm(event)">
+                    <i class="ri-user-add-line"></i>
+                    <a href="/wtProject/profile/profile.html" style="color: white; text-decoration: none;">Create Account</a>
+                </button>
+            </form>
+    
+            <div class="signin-link">
+                Already registered? <a href="../signin/signin.html">Sign in here</a>
+            </div>
+        </div>
+
+        <script src="signup.js"></script>
+</body>
+</html>
